@@ -25,16 +25,16 @@ function App() {
         const a = document.createElement("a");
         a.style.display = "none";
         a.href = downloadUrl;
-        a.download = "audio.mp3"; // Change the file extension to mp3
+        a.download = "video.mp4";
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(downloadUrl);
       } else {
-        alert("Failed to download audio");
+        alert("Failed to download video");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Failed to download audio");
+      alert("Failed to download video");
     } finally {
       setDownloading(false);
     }
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>YouTube Audio Downloader</h1>
+      <h1>YouTube Video Downloader</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
