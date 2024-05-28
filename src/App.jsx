@@ -8,13 +8,16 @@ function App() {
     e.preventDefault();
     setDownloading(true);
     try {
-      const response = await fetch("http://localhost:3001/download", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ url }),
-      });
+      const response = await fetch(
+        "https://ytdwonload-server-nodejs.vercel.app/download",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ url }),
+        }
+      );
 
       if (response.ok) {
         const blob = await response.blob();
