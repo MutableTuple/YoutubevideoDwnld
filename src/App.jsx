@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <div className="h-screen flex flex-col items-center justify-center  bg-slate-0 p-2 md:p-40">
-        <div className="font-bold text-2xl text-green-500">
+        <div className="font-bold text-sm sm:text-2xl text-center text-green-500">
           No Ads, No Redirects, Quick Downloads.
         </div>
         <br />
