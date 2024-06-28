@@ -59,6 +59,19 @@ function App() {
           No Ads, No Redirects, Quick Downloads.
         </div>
         <br />
+        <a
+          href="https://www.producthunt.com/posts/ad-free-youtube-music-shorts-downloader?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ad&#0045;free&#0045;youtube&#0045;music&#0045;shorts&#0045;downloader"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=466916&theme=light"
+            alt="Ad&#0032;free&#0032;YouTube&#0032;music&#0044;&#0032;shorts&#0032;downloader - one&#0032;click&#0032;music&#0032;&#0038;&#0032;shorts&#0032;without&#0032;ads&#0032;and&#0032;spammy&#0032;redirects | Product Hunt"
+            style={{ width: "250px", height: "54px" }}
+            width="250"
+            height="54"
+          />
+        </a>
+        <br />
         <div className="w-3/4 flex flex-col gap-8">
           <h1 className="md:text-6xl text-4xl font-extrabold text-center">
             YouTube <span className="text-red-600">Shorts & Music</span>{" "}
@@ -107,17 +120,21 @@ function App() {
           </form>
         </div>
         {/* contributors */}
-        <a
-          href="https://buymeacoffee.com/gobashmeofficial"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiBuymeacoffee size={"32"} />
-        </a>
+
         <br />
-        <h1 className="font-semibold text-stone-600">
-          Be the first person to support us!
-        </h1>
+        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <h1 className="font-semibold text-stone-600">
+            Be the first person to support us!
+          </h1>
+          <a
+            href="https://buymeacoffee.com/gobashmeofficial"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiBuymeacoffee size={"32"} />
+          </a>
+        </div>
+
         <br />
         <div className="flex gap-5 items-center justify-center">
           <Contributors />
